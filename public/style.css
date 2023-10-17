@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(70, 0, 0, 0.9);
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+/* Style the header and nav bar */
+header {
+    padding: 3vh;
+    background-image: url('http://drive.google.com/uc?export=view&id=1AAgDnDuOOrHnwlix46vzDauwBgi-y-Zn');
+    border: black solid 2vh;
+    position: relative;
+}
+
+header h2{
+    color:white;
+    position: relative;
+    font-size: 5vh;
+}
+
+/* Style the nav bar along with the header */
+nav {
+    background-color: #444;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.3vh;
+    position: relative;
+}
+
+header h2 {
+    font-size:8vh;
+    background-color: rgba(16, 16, 16, 0.8);
+    padding: 1vw;
+    width: 20%;
+}
+
+header a::after {
+    content: "";
+    display: block;
+    height: 2px; /* Line height */
+    width: 0;
+    background-color: #fff; /* Line color */
+    position: absolute;
+    bottom: -3px; /* Adjust this to control the line's vertical position */
+    left: 0;
+    transition: width 0.3s; /* Smooth transition for the line */
+}
+
+header a:hover::after {
+    width: 100%; /* Expand the line to 100% width on hover */
+}
+
+header img {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    width: 10%;
+}
+
+header img:hover {
+    transition: transform 0.3s;
+    transform: scale(1.2); /* Scale up the logo on hover */
+}
+
+/* This goes for the article section of the pages*/
+article{
+    margin: 15px;
+    flex: 1;
+}
+
+.login_article_div{
+    line-height: 250%;
+    background-color: lightgray;
+    padding: 15px;
+    text-align: center;
+    margin-right: 2.5vw;
+    margin-left: 2.5vw;
+    margin-bottom: 4vh;
+}
+
+.login_button {
+    text-decoration: none;
+    background-color: lightseagreen;
+    color: white;
+    padding: 1vh;
+    margin: 10px;
+}
+
+.login_button:hover{
+    background-color: goldenrod;
+}
+
+.feed {
+    width: 100%;
+    max-width: 90vw; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.post p {
+    line-height: 5vh;
+}
+
+/* This for Login and signup page */
+.loginModule {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.loginModule p {
+    line-height: 5vh;
+}
+
+.loginModule form {
+    line-height: 8vh;
+    float: center;
+}
+
+.loginModule .sign_up {
+    color: rgb(0, 0, 0, 0.9);
+    text-decoration: underline;
+}
+
+/* This is to load more post on the home page */
+.loadMore {
+    text-decoration: none;
+    background-color: lightseagreen;
+    color: white;
+    padding: 1vh;
+    margin: 10px;
+    width: 5%;
+    position: relative;
+    top: 45px;
+    left: 40vw;
+}
+
+.loadMore:hover {
+    background-color: goldenrod;
+}
+
+/* For the footer CSS design */
+footer {
+    padding: 3vh;
+    color:#fff;
+    background-color: black;
+    border: black solid 2vh;
+    position: relative;
+    margin-top: 100px; 
+}
+
+/* CSS for the overlay background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav {
+        line-height: 0.01vh;
+        margin-right:1%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: auto;
+    }
+
+    .loadMore {
+        width: 20%;
+    }
+}

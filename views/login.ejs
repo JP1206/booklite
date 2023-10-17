@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
+    <title> BookShelf Login </title>
+</head>
+<body>
+    <header>
+        <!-- This contains the nav -->
+        <a class="logo" href="/"><img src="http://drive.google.com/uc?export=view&id=161fBYCoAU-1Rhz17Lr3C-a3nxr3ZQ8s_" alt="Logo"></a> 
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li> <!-- This is the feed -->
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">BookShelf</a></li>
+                <li><a href="#">Profile</a></li> <!-- This is where the profile of the user can be seen -->
+            </ul>
+        </nav>
+    </header>
+    
+    <article>
+        <div class="feed">
+            <!-- Login module -->
+            <div class="loginModule">
+                <h2>Login:</h2>
+                <form>
+                    <label for="usr_name">Username:</label>
+                    <input type="text" id="usr_name" name="usr_name">
+                    <br>
+                    <label for="psswrd">Password:</label>
+                    <input type="password" id="psswrd" name="psswrd">
+                    <button type="button" id="toggleButton" onclick="togglePasswordInput()">Show Password</button>
+                </form>
+                <br>
+                <a href="/home"><span class="login_button"> Login </span></a>
+                <a href=# class="sign_up">Don't have an account yet?</a>
+                <br>
+                <br>   
+            </div>
+    </article>
+
+    <footer>
+        <!-- This is where the copyrights are -->
+        <a href=#> About Us </a> || <a href=#> Contatct Us </a> || <a href=#> Support Us </a> 
+    </footer>
+</body>
+</html>

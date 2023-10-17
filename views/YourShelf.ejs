@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
+    <title> Your Profile </title>
+</head>
+<body>
+    <header>
+        <!-- This contains the nav -->
+        <a class="logo" href="/home"><img src="http://drive.google.com/uc?export=view&id=161fBYCoAU-1Rhz17Lr3C-a3nxr3ZQ8s_" alt="Logo"></a> 
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li> <!-- This is the feed -->
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">BookShelf</a></li>
+                <li><a href="#">Profile</a></li> <!-- This is where the profile of the user can be seen -->
+                <li><a href="/">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <article>
+        <!-- This is like social media feed, where people can scroll down to look for what people are reading. -->
+
+        <div class="feed">
+            
+            <div class="post">
+                <h2 class="post_user"> John Doe </h2>
+                <h4 class="usr_tag"> @ john_deer1 </h4>
+                <p class="post_content"> This user has yet to add their user signature. </p>
+                <span class="post_img"></span>
+            </div>
+
+            <div class="post">
+                <h2 class="post_user"> John Doe </h2>
+                <h4 class="usr_tag"> @ john_deer1 </h4>
+                <p class="post_content"> This is one of your posts. </p>
+                <span class="post_img"></span>
+            </div>
+
+            <div class="post">
+                <h2 class="post_user"> John Doe </h2>
+                <h4 class="usr_tag"> @ john_deer1 </h4>
+                <p class="post_content"> This is one of your posts. </p>
+                <span class="post_img"></span>
+            </div>
+
+            <% if (randomValue === 1) { %>
+                <div class="post">
+                  <h2 class="post_user">John Doe</h2>
+                  <h4 class="usr_tag">@john_deer1</h4>
+                  <p class="post_content">This is case 1: This is the first case.</p>
+                  <span class="post_img"></span>
+                </div>
+              <% } else if (randomValue === 2) { %>
+                <div class="post">
+                  <h2 class="post_user">John Doe</h2>
+                  <h4 class="usr_tag">@john_deer1</h4>
+                  <p class="post_content">This is case 2: This is the second case.</p>
+                  <span class="post_img"></span>
+                </div>
+              <% } else if (randomValue === 3) { %>
+                <div class="post">
+                  <h2 class="post_user">John Doe</h2>
+                  <h4 class="usr_tag">@john_deer1</h4>
+                  <p class="post_content">This is case 3: This is the third case.</p>
+                  <span class="post_img"></span>
+                </div>
+              <% } else { %>
+                <div class="post">
+                  <h2 class="post_user">John Doe</h2>
+                  <h4 class="usr_tag">@john_deer1</h4>
+                  <p class="post_content">This is the default case.</p>
+                  <span class="post_img"></span>
+                </div>
+              <% } %>
+        <div>
+    </article>
+
+    <footer>
+        <!-- This is where the copyrights are -->
+        <a href=#> About Us </a> || <a href=#> Contatct Us </a> || <a href=#> Support Us </a> 
+    </footer>
+</body>
+</html>
